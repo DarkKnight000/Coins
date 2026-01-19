@@ -56,7 +56,7 @@ class ApiService {
     ): PaginatedCoinResponse {
         return try {
             client.get("$host:$port/get_coins") {
-                parameter("country_id1", countryId)
+                parameter("country_id", countryId)
                 parameter("collection_id", collectionId)
                 parameter("page", page)
                 parameter("page_size", pageSize)
